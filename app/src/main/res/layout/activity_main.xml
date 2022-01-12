@@ -58,9 +58,23 @@
             >
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/ed_username"
-                android:inputType="text"
-                android:hint="Username"
+                android:id="@+id/et_gmail"
+                android:inputType="textEmailAddress"
+                android:hint="Gmail"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_subject"
+                android:inputType="textEmailSubject"
+                android:hint="Subject"
                 android:layout_marginTop="@dimen/medium_margin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
@@ -69,15 +83,14 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:endIconMode="password_toggle"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <EditText
-                android:id="@+id/ed_password"
-                android:hint="Password"
+                android:id="@+id/et_massage"
+                android:hint="Massage"
                 android:layout_marginTop="@dimen/small_margin"
                 android:layout_width="match_parent"
-                android:inputType="numberPassword"
+                android:inputType="textImeMultiLine"
                 android:layout_height="wrap_content"/>
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -92,6 +105,7 @@
             android:textColor="@color/black"/>
 
         <Button
+            android:id="@+id/btn_go"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/black"
